@@ -1,0 +1,290 @@
+<!DOCTYPE htlm>
+<html>
+  <head>
+    <meta charset=¨utf-8¨>
+    <title>HTML: lists</title>
+  </head>
+  <style>
+    h1 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+      text-decoration: underline;
+      text-align:center;
+    }  
+    #Coreadelsur-info-heading {
+      background-color: rgb(214, 174, 255);
+      text-decoration: underline;
+      font-family:monospace;
+      font-size:31px;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+      text-align: justify; 
+      font-size:14px;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+      text-align:center;
+      text-decoration: underline;
+    }  
+    #Contenidos-info-heading {
+      background-color: rgba(202, 119, 202, 0.45);
+      font-family:monospace;
+      font-size:2em;
+    }
+    p {
+      color: rgb(0, 0, 0);
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #informacionbasica-info-heading {
+      background-color: rgba(193, 123, 193, 0.45);
+      font-family:monospace;
+      font-size:2em;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #clima-info-heading {
+      background-color: rgba(133, 53, 133, 0.45);
+    }
+
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+      font-size: 15px;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+
+    #florayfauna-info-heading {
+      background-color: rgba(133, 53, 133, 0.45);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+      font-size:15px;
+    }
+    h2{
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #Religion-info-heading{
+      background-color: rgb(214, 174, 255);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #Religion-info-heading {
+      background-color: rgba(202, 119, 202, 0.45);
+      font-family:monospace;
+    }
+    h2{
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #Educacion-info-heading{
+      background-color: rgb(214, 174, 255);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #Educacion-info-heading{
+      background-color: rgba(202, 119, 202, 0.45);
+      font-family:monospace;
+    }
+    h2{
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+
+    #Musica-info-heading{
+      background-color: rgb(214, 174, 255);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+    }  
+    #Musica-info-heading{
+      background-color: rgba(202, 119, 202, 0.45);
+      font-family:monospace;
+    }
+    h2{
+      color: rgb(255, 255, 255);
+    }  
+    #musicatradicional-info-heading{
+      background-color: rgb(214, 174, 255);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+    }
+    h3{
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+    }  
+    #musicatradicional-info-heading{
+      background-color: rgba(255, 255, 255, 0.45);
+      font-family:monospace;
+    }
+    h3 {
+      color: rgb(0, 0, 0);
+      font-family: monospace;
+      text-align:justify;
+      font-weight: 100;
+    } 
+    h2 {
+      color: rgb(255, 255, 255);
+      font-family:monospace;
+      text-align:center;
+      text-decoration: underline;
+      font-size:2em;
+    }  
+    #datoscuriosos-info-heading {
+      background-color: rgba(202, 119, 202, 0.45);
+      font-family:monospace;
+    }
+    p {
+      color: rgb(0, 0, 0);
+      font-family:monospace;
+    }
+    h4  {
+      font-family:monospace;
+      color: rgb(0, 0, 0);
+      text-align:justify;
+      font-size:15px;
+      font-weight: 100;
+    }
+    #official-info{
+      color:rgb(0, 0, 0);
+      background:rgba(132, 95, 132, 0.16);
+      width:90%;
+      height: 150px;
+      overflow: auto;
+      overflow-x: auto;
+      overflow-y: auto;
+      font-family:monospace;
+      font-size:15px;
+      text-align: justify;
+      margin: 15px 0px 10px 6px;
+      border: 2px dashed rgb(186, 7, 180);
+    }
+    #bandera{
+      width: 250px;
+      position:absolute;
+      top:px;
+      right: 10px;
+      z-index:1;
+      left:px;
+      border: 2px groove purple
+    }
+    .datos {
+      border-top: 1px solid rgba(133, 53, 133, 0.45);
+      border-bottom: 1px solid rgb(214, 174, 255);
+      padding-top: 6px;
+      padding-bottom: 6px;      
+    }
+    p.datos{
+      border:5px solid rgba(128, 0, 128, 0.1);
+      background-color:rgba(158, 0, 165, 0.08)
+    }
+    h3{
+      font-family: monospace;
+    }
+    a:hover,a:active,a:focus{
+      background-color:rgba(231, 189, 231, 0.45);
+    }
+  </style>
+  <body>
+    <p>
+    <h1 id ="Coreadelsur-info-heading">Corea del Sur.</h1>
+    <h2 id="Contenidos-info-heading">+Contenidos</h2>
+    <ol>
+      <li><a href="#informacionbasica">Información básica.</a></li>
+      <li><a href="#clima">clima.</a></li>
+      <li><a href="#florayfauna">Flora y fauna.</a></li>
+      <li><a href="#religion">Religión.</a></li>
+      <li><a href="#educacion">Educación.</a></li>
+      <li><a href="#musica">Música.</a></li>
+      <li><a href="#datoscuriosos">Datos curiosos.</a></li>
+    </ol>
+    <h2 id="informacionbasica-info-heading">1.Informacion básica.</h2>
+    <h2 id="informacionbasica"></h2>
+    <p><div id=official-info> La <strong>República de Corea</strong>,normalmente conocido como Corea del Sur es un país perteneciente de <em>Asia Oriental</em>,ubicado en la parte sur de la <em>península de Corea</em>.Limita al norte con Corea del Norte,con la cual formo un país hasta 1945.Al este se encuentra el <strong>mar del  Este</strong>,al sur de Corea,que lo separa de <em>Japón</em>,y al oeste con el mar amarillo.Su territorio comprende la mitad sur de la península de Corea englobando unas tres mil islas,dentro de las cuales se destacan<strong> Jeju,Ullengo y Dokdo</strong> Aproximadamente la mitad de la población del país vive en su capital, Seúl, o en su zona metropolitana, que es una de las;Corea es una de las civilizaciones más antiguas del mundo.
+    <p>El gobierno se define como una<strong> democracia representativa</strong>,como muchas democracias,en el país se presenta la división de poderes en<em> ejecutivo,judicial y legislativo</em>.Las ramas ejecutivas y legislativa operan principalmente a <em>nivel nacional</em>,aunque varios ministerios en el poder ejecutivo también realizan funciones locales.Los <em>gobiernos provinciales</em> son semi-autónomos y cuentan con órganos legislativos propios.La <em>rama judicial opera tanto a nivel nacional como local</em>.</p></div>
+
+    <p class="datos">El jefe de Estado es el presidente, actualmente<strong> Lee Myung-bak</strong>, es elegido por voto directo popular para un único mandato de cinco años. Además de ser el más alto representante de la república y el comandante en jefe de las fuerzas armadas, el presidente también nombra al primer ministro y preside el <em>Consejo de Estado</em>.El primer ministro es el jefe de gobierno del país, y desempeña muchas de las funciones del poder ejecutivo. El parlamento coreano, unicameral, se llama Asamblea Nacional, o <strong>Gukhoe Sus miembros ejercen mandatos de cuatro años</strong>. La legislatura tiene actualmente 299 escaños, de los cuales 243 son elegidos por voto regional y los restantes son distribuidos por representación proporcional;la Institución Judicial más elevada es el Tribunal Supremo, cuyos jueces son nombrados por el presidente con el consentimiento del parlamento.</p>
+    <h2 id="clima-info-heading">2.Clima.</h2>
+    <h2 id="clima"></h2>
+    <p class="datos">El país tiende a tener un <strong>clima continental húmedo y un clima subtropical húmedo</strong> y se ve afectado por el monzón de <em>Asia oriental</em>, con precipitaciones más abundantes en verano durante una corta temporada de lluvias llamada <strong>jangma</strong>,que comienza a finales de junio y termina a finales de agosto.Los inviernos pueden ser muy fríos, con una temperatura <em>mínima que se acerca a los –20 °C en la parte más septentrional del país</em>. En Seúl, el rango de la temperatura promedio en enero <em>va de –7 °C a 1 °C</em>, mientras que en agosto asciende de 22 °C a 30 °C.Las temperaturas en invierno son más suaves a lo largo de la costa sur y considerablemente bajas en el interior montañoso. Las precipitaciones se concentran en los meses de verano, de junio a septiembre. En esa misma época, la costa sur está sujeta a los tifones que traen consigo vientos fuertes y lluvias intensas La precipitación media anual varía de 1370 milímetros en Seúl a 1470 milímetros en Busán.</p>
+    <h2 id=florayfauna-info-heading>3.Flora y fauna.</h2>
+    <h2 id="florayfauna"></h2>
+    <p class="datos"> El país se ubica en una zona donde predomina el clima húmedo continental, por lo que la vegetación más abundante en el país es típica de los bosques mixtos. Aquí se presentan especies vegetales de hoja caduca como el<strong> arce, el olmo y el álamo</strong>; al igual que árboles de hoja perenne como el <em>pino y el abeto</em>. En las zonas costeras del sur se pueden hallar distintas especies que no crecen en el resto del país, como el <strong>bambú, el laurel y el roble</strong>.En las zonas costeras del sur se pueden hallar distintas especies que no crecen en el resto del país, como el bambú, el laurel y el roble.Los bosques cubren cerca de dos tercios del territorio nacional, aunque su número y extensión ha estado en constante disminución debido a las actividades humanas.<br>
+      El bosque mixto se caracteriza por albergar múltiples especies de mamíferos grandes y pequeños, así como gran cantidad de aves e insectos. Las <em>ardillas, puerco espínes, liebres, búhos, halcones</em>y otros animales pequeños han sobrevivido al impacto humano, quienes han reemplazado estas especies por animales domésticos como perros, gatos, caballos, etc. Sin embargo, las grandes especies de mamíferos, particularmente los<strong>tigres, leopardos, osos y linces</strong>, se encuentran actualmente en peligro de extinción, debido principalmente a la cacería constante y a la destrucción de su hábitat.<br>
+      Gracias a que es una de las zonas más vigiladas de todo el planeta y a la restricción del acceso a todos los civiles, la zona desmilitarizada de Corea es uno de los principales santuarios naturales del país, donde se conserva la mayor parte de la flora y fauna nativa de la región.</p>
+    <h2 id="Religion-info-heading">4.Religión.</h2>
+    <h2 id="religion"></h2>
+    <p class="datos"> En 2005, casi la mitad de la población surcoreana expresó que no tenía preferencia religiosa. Del resto, la<strong> mayoría son cristianos o budistas</strong>; de acuerdo con el censo de 2005, el<em> 29,2 % de la población en ese momento era cristiana (18,3 % protestantes y 10,9 % católicos) y 22,8 % eran budistas</em>. Otras religiones practicadas en el país incluyen el islam y varios nuevos movimientos religiosos como el jeungismo, el daesunismo, el cheondoísmo y el budismo won. Hoy en día, la libertad de culto está garantizada por la Constitución y no hay ninguna religión de estado</p>
+    <h2 id="Educacion-info-heading">5.Educación.</h2>
+    <h2 id="educacion"></h2>
+    <p class="datos">La educación se considera crucial para el éxito, y por lo tanto, es uno de los principales puntos de los planes gubernamentales y en ella<strong> se invierte el 4,6 % del PIB</strong>. En los resultados de 2006 del Programa Internacional para la Evaluación de Estudiantes de la OCDE,<em>el país se ubicó en primer lugar en resolución de problemas, tercer lugar en matemáticas y undécimo en ciencias</em>. <br>El sistema educativo surcoreano está tecnológicamente avanzado y es el primer país del mundo que llevó el acceso rápido a Internet de banda ancha a cada primaria y secundaria en todo el país. Con esta infraestructura, el país ha desarrollado los primeros libros de texto digitales en el mundo, que se distribuyeron de forma gratuita a todas las escuelas antes del 2013</p>
+    <h2 id="Musica-info-heading">6.Música.</h2>
+    <h2 id="musica"></h2>
+    <p class="datos">A partir de la división de la península, la música de Corea del Sur se divide básicamente en dos: la<strong> música tradicional y folclórica y la música moderna</strong>.
+      La música tradicional coreana, llamada <strong>Hanguk Eumak</strong>  se desarrolló de diferentes formas a lo largo de los siglos, ya que cumplía un papel importante en ceremonias y eventos. Las primeras formas de música y danzas coreanas datan de la época de los Tres Reinos, donde se llegaron a utilizar más de treinta instrumentos musicales diferentes. La música coreana se dividía en varios géneros, según la utilidad que tuviera: el muak era utilizado en rituales; el talchum en las danzas con máscaras; el nongak era utilizado por los agricultores y el minyo por el pueblo en general.<br>
+      La música coreana moderna, denominada<strong>  K-pop</strong>
+      , se caracteriza por el uso de canciones del género pop mezclada con elementos de la música folclórica surcoreana. Otros géneros con gran seguimiento en el país son el R&B, el hip hop y la música electrónica. Varios intérpretes y agrupaciones musicales surcoreanos han logrado traspasar las fronteras y ser aceptados por el público de otros países asiáticos como China, Japón, Taiwán y Hong Kong e incluso ser aceptados en los demás continentes. Hoy día este género es mundialmente conocido.<br></p>
+
+
+    <h3 id="musicatradicional-info-heading">
+      <li>Música tradicional.</li>
+      <a target="_blank"href="https://www.youtube.com/watch?v=P2qPqf75p5w">TRADICIONAL-instrumental.</a>
+      <li>Música moderna.</li>
+      <a target="_blank"href="https://www.youtube.com/watch?v=kTlv5_Bs8aw">KPOP-BTS</a><br>
+      <a target="_blank"href="https://www.youtube.com/watch?v=IHNzOHi8sJs">KPOP-BLACKPINK</a><br>
+      <a target="_blank"href="https://www.youtube.com/watch?v=vPwaXytZcgI">KPOP-TWICE</a></h3>
+
+    <h2 id="datoscuriosos-info-heading">7.Datos curiosos.</h2>
+    <h2 id="datoscuriosos"></h2>
+    <h4>
+      <img src="http://nicaraguasandino.com/wp-content/uploads/2021/03/banderadecoreadelsur-2.jpg"id="bandera">
+      <ul>
+        <li>Corea del Sur es un país pequeño, pero extremadamente rico y diverso.</li>
+        <li>La educación es la mayor prioridad,y el 68% de la poblacion cuenta con estudios universitarios.</li>
+        <li>Los coreanos siempren nos van a sacar un año,ya que se nace con un año.</li>
+        <li>Su industria del entretenimiento es una de las más fuertes del mundo.</li>
+        <li>Es una de las grandes capitales tecnológicas.</li>
+        <li>Todo gira entorno a la comida.</li>
+      </ul>
+    </h4>
+    <a target="_blank"href="https://www.mochileandoporelmundo.com/30-curiosidades-de-corea-del-sur-y-los-coreanos/">Lee más datos curiosos sobre Corea del Sur.</a>
+  </body>
+  </html>
